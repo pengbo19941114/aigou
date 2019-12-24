@@ -1,0 +1,11 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: AIGOU_PLAT
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #AIGOU_PLAT is registered to registration center
+  instance:
+    prefer-ip-address: true #display the client ip

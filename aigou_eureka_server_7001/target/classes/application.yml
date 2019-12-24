@@ -1,0 +1,11 @@
+server:
+  port: 7001
+eureka:
+  client:
+    register-with-eureka: false #Eureka server is not allowed to register on their own
+    fetch-registry: false #Eureka server is not allowed to pull the service
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/ #zull address
+spring:
+  application:
+    name: AIGOU_EUREKA
